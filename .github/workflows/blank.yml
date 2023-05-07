@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print info
-        run: echo ${{ toJson( github)}}
+        run: echo "${{ toJson( github)}}"
 
       - name: Run a one-line script
         run: echo Hello, world!
