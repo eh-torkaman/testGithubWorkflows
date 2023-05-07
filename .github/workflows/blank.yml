@@ -24,6 +24,7 @@ jobs:
          npm run test:prod
 
   build:
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
